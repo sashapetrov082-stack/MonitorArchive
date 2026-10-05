@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PlayNova — игровой портал</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo"><span class="logo__mark">P</span><span class="logo__text">PlayNova</span></a>
+      <nav class="nav" id="nav">
+        <a href="#games">Игры</a>
+        <a href="#news">Новости</a>
+        <a href="#events">События</a>
+        <a href="#support">Поддержка</a>
+      </nav>
+      <div class="header__actions">
+        <select class="lang" aria-label="Язык">
+          <option>RU</option><option>EN</option>
+        </select>
+        <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Главные баннеры">
+      <div class="hero__track" id="heroTrack"></div>
+      <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="Назад">‹</button>
+      <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="Вперёд">›</button>
+      <div class="hero__dots" id="heroDots"></div>
+    </section>
+
+    <section class="section container" id="games">
+      <div class="section__head">
+        <h2>Наши игры</h2>
+        <div class="tabs" id="tabs">
+          <button class="tab is-active" data-filter="all">Все</button>
+          <button class="tab" data-filter="rpg">RPG</button>
+          <button class="tab" data-filter="strategy">Стратегии</button>
+          <button class="tab" data-filter="casual">Казуальные</button>
+          <button class="tab" data-filter="action">Экшен</button>
+        </div>
+      </div>
+      <div class="grid" id="gamesGrid"></div>
+    </section>
+
+    <section class="section container" id="news">
+      <div class="section__head"><h2>Новости</h2><a href="#" class="more">Все новости →</a></div>
+      <div class="news" id="newsList"></div>
+    </section>
+
+    <section class="events" id="events">
+      <div class="container events__inner">
+        <div>
+          <h2>Сезон турниров открыт</h2>
+          <p>Соревнуйтесь с игроками со всего мира и получайте эксклюзивные награды.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+        <div class="events__stats">
+          <div><strong>12M+</strong><span>игроков</span></div>
+          <div><strong>40+</strong><span>стран</span></div>
+          <div><strong>24/7</strong><span>поддержка</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="support">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo"><span class="logo__mark">P</span><span class="logo__text">PlayNova</span></a>
+        <p>© 2026 PlayNova. Все права защищены.</p>
+      </div>
+      <div class="footer__cols">
+        <div><h4>Компания</h4><a href="#">О нас</a><a href="#">Карьера</a><a href="#">Пресс-центр</a></div>
+        <div><h4>Помощь</h4><a href="#">Поддержка</a><a href="#">FAQ</a><a href="#">Статус серверов</a></div>
+        <div><h4>Правовое</h4><a href="#">Условия использования</a><a href="#">Конфиденциальность</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
