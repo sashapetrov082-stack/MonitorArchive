@@ -61,17 +61,7 @@ PC_GAMES.forEach((g) => {
   pcList.appendChild(item);
 });
 
-// Новости
-const newsList = document.getElementById("newsList");
-NEWS.forEach((n) => {
-  const item = document.createElement("a");
-  item.href = "#";
-  item.className = "news__item";
-  item.innerHTML = `
-    <div class="news__img" style="background:${bg(n)}"></div>
-    <div class="news__body"><span class="news__meta">${n.category} · ${n.date}</span><h3>${n.title}</h3></div>`;
-  newsList.appendChild(item);
-});
+
 
 // Мобильное меню
 document.getElementById("burger").addEventListener("click", () => {
