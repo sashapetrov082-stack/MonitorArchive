@@ -25,6 +25,6 @@ const MOBILE_GAMES = [
 const PC_GAMES = [
   { title: "일곱 개의 대죄: Origin", genre: "멀티형 오픈월드 RPG", image: "images/p-11.png", colors: ["#c31432", "#240b36"], url: "https://7origin.netmarble.com/ko?utm_source=potal&utm_medium=list&utm_campaign=7origin&utm_id=potal_list_7origin" },
   { title: "나 혼자만 레벨업:", genre: "멀티형 오픈월드", image: "images/p-10.png", colors: ["#1a2a6c", "#b21f1f"], url: "https://slvariseoverdrive.netmarble.com/ko?utm_source=potal&utm_medium=list&utm_campaign=sololvcs&utm_id=potal_list_sololvcs" },
-  { title: "마구마구", genre: "", image: "images/p-1.png", colors: ["#232526", "#414345"], "https://ma9.netmarble.net/main.asp?utm_source=potal&utm_medium=list&utm_campaign=ma9&utm_id=potal_list_ma9" },
+  { title: "마구마구", genre: "", image: "images/p-1.png", colors: ["#232526", "#414345"],url "https://ma9.netmarble.net/main.asp?utm_source=potal&utm_medium=list&utm_campaign=ma9&utm_id=potal_list_ma9" },
 ];
 
