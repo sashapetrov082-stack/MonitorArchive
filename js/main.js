@@ -77,3 +77,16 @@ NEWS.forEach((n) => {
 document.getElementById("burger").addEventListener("click", () => {
   document.getElementById("nav").classList.toggle("is-open");
 });
+
+// Выпадающий список «Наши проекты»
+const familyBtn = document.getElementById("familyBtn");
+const familyList = document.getElementById("familyList");
+familyBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  const open = familyList.classList.toggle("is-open");
+  familyBtn.setAttribute("aria-expanded", open);
+});
+document.addEventListener("click", () => {
+  familyList.classList.remove("is-open");
+  familyBtn.setAttribute("aria-expanded", false);
+});
