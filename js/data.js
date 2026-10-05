@@ -24,9 +24,9 @@ const MOBILE_GAMES = [
 ];
 
 const PC_GAMES = [
-  { title: "Клинок Рассвета", genre: "Экшен-RPG", image: "", colors: ["#c31432", "#240b36"] },
-  { title: "Звёздный флот", genre: "Стратегия", image: "", colors: ["#1a2a6c", "#b21f1f"] },
-  { title: "Арена Теней", genre: "Экшен", image: "", colors: ["#232526", "#414345"] },
+  { title: "일곱 개의 대죄: Origin", genre: "멀티형 오픈월드 RPG", image: "images/p-11.png", colors: ["#c31432", "#240b36"] },
+  { title: "나 혼자만 레벨업:", genre: "멀티형 오픈월드", image: "images/p-10.png", colors: ["#1a2a6c", "#b21f1f"] },
+  { title: "마구마구", genre: "", image: "images/p-1.png", colors: ["#232526", "#414345"] },
 ];
 
 const NEWS = [
