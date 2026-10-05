@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PlayNova — игровой портал</title>
+  <title>NetmarbleX</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -14,11 +14,10 @@
     <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
     <nav class="side-nav" id="nav">
       <a href="#games"><svg viewBox="0 0 24 24"><path d="M6 11h4M8 9v4M15 12h.01M18 10h.01M17.3 5H6.7a4 4 0 0 0-4 3.6L2 15a3 3 0 0 0 5.2 2.2L9 15h6l1.8 2.2A3 3 0 0 0 22 15l-.7-6.4A4 4 0 0 0 17.3 5z"/></svg>Игры</a>
-      <a href="#news"><svg viewBox="0 0 24 24"><path d="M4 4h13v16H6a2 2 0 0 1-2-2zM17 8h3v10a2 2 0 0 1-2 2M8 8h5M8 12h5M8 16h3"/></svg>Новости</a>
-      <a href="#events"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg>Турниры</a>
-      <a href="#"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Сообщество</a>
-      <a href="#"><svg viewBox="0 0 24 24"><path d="M23 7l-7 5 7 5zM1 5h15v14H1z"/></svg>Видео</a>
-      <a href="#support"><svg viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg>Поддержка</a>
+      <a href="https://forum.netmarble.com/"><svg viewBox="0 0 24 24"><path d="M4 4h13v16H6a2 2 0 0 1-2-2zM17 8h3v10a2 2 0 0 1-2 2M8 8h5M8 12h5M8 16h3"/></svg>넷마블 포럼</a>
+      <a href="#events"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg>토너먼트</a>
+      <a href="https://forum.netmarble.com/"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>커뮤니티</a>
+      <a href="#support"><svg viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg>지원</a>
     </nav>
   </aside>
 
@@ -32,7 +31,7 @@
       <section class="games" id="games">
         <div class="games__mobile">
           <div class="section__head">
-            <h2>Мобильные игры</h2>
+            <h2>Мobile games</h2>
             <a href="#" class="more">Все игры →</a>
           </div>
           <div class="poster-grid" id="mobileGrid"></div>
@@ -43,21 +42,18 @@
         </div>
       </section>
 
-      <section class="section" id="news">
-        <div class="section__head"><h2>Новости</h2><a href="#" class="more">Все новости →</a></div>
-        <div class="news" id="newsList"></div>
-      </section>
+
 
       <section class="events" id="events">
         <div>
-          <h2>Сезон турниров открыт</h2>
-          <p>Соревнуйтесь с игроками со всего мира и получайте эксклюзивные награды.</p>
-          <a href="#" class="btn">Подробнее</a>
+          <h2>대회 시즌이 시작되었습니다</h2>
+          <p>전 세계의 플레이어들과 경쟁하고 독점 보상을 받아보세요.</p>
+          <a href="https://vampir.netmarble.com/pcplay" class="btn">자세히 보기</a>
         </div>
         <div class="events__stats">
-          <div><strong>12M+</strong><span>игроков</span></div>
-          <div><strong>40+</strong><span>стран</span></div>
-          <div><strong>24/7</strong><span>поддержка</span></div>
+          <div><strong>12M+</strong><span>선수들</span></div>
+          <div><strong>40+</strong><span>국가</span></div>
+          <div><strong>24/7</strong><span>지원</span></div>
         </div>
       </section>
     </main>
@@ -67,32 +63,27 @@
         <div class="footer__top">
           <a href="#" class="logo logo--light"><span class="logo__mark">P</span><span class="logo__text">PlayNova</span></a>
           <div class="footer__family">
-            <button class="family__btn" id="familyBtn" aria-expanded="false">Наши проекты <span>▾</span></button>
+            <button class="family__btn" id="familyBtn" aria-expanded="false">당사의 프로젝트 <span>▾</span></button>
             <ul class="family__list" id="familyList">
-              <li><a href="#">PlayNova Studio</a></li>
-              <li><a href="#">PlayNova Esports</a></li>
-              <li><a href="#">PlayNova Developers</a></li>
+              <li><a href="#">Netmarble Studio</a></li>
+              <li><a href="#">Netmarble Esports</a></li>
+              <li><a href="#">Netmarble Developers</a></li>
             </ul>
           </div>
         </div>
         <nav class="footer__links">
-          <a href="#">О компании</a>
-          <a href="#">Сотрудничество и реклама</a>
-          <a href="#">Пользовательское соглашение</a>
-          <a href="#" class="is-strong">Политика конфиденциальности</a>
-          <a href="#">Защита прав игроков</a>
-          <a href="#">Возрастные ограничения</a>
-          <a href="#">Карьера</a>
-          <a href="#">Карта сайта</a>
+          <a href="http://company.netmarble.com/">회사소개 </a>
+          <a href="http://www.netmarble.net/pop/adInfo"> 광고/제휴문의</a>
+          <a href="http://helpdesk.netmarble.net/HelpStipulation.asp">약관보기 </a>
+          <a href="http://helpdesk.netmarble.net/HelpPrivacy.asp" class="is-strong"> 개인정보처리방침</a>
+          <a href="http://helpdesk.netmarble.net/HelpTeenager.asp"> 이용자 권익 보호정책</a>
+          <a href="http://helpdesk.netmarble.net/HelpNoMember.asp">전자우편 </a>
+          <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1058764746"> 사업자정보공개사이트</a>
+          <a href="http://helpdesk.netmarble.net/sitemap.asp"> 사이트맵</a>
         </nav>
         <div class="footer__info">
-          <p>PlayNova · Поддержка: support@playnova.example · Пн–Пт, 10:00–19:00</p>
-          <p>© 2026 PlayNova. Все права защищены.</p>
-        </div>
-        <div class="footer__social">
-          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8zM10 15V9l5.2 3z"/></svg></a>
-          <a href="#" aria-label="Discord"><svg viewBox="0 0 24 24"><path d="M19.3 5.3A17 17 0 0 0 15 4l-.5 1a16 16 0 0 0-5 0L9 4a17 17 0 0 0-4.3 1.3C2 9.4 1.3 13.4 1.6 17.3A17 17 0 0 0 6.9 20l1.1-1.6a11 11 0 0 1-1.7-.8l.4-.3a12 12 0 0 0 10.6 0l.4.3a11 11 0 0 1-1.7.8l1.1 1.6a17 17 0 0 0 5.3-2.7c.4-4.5-.7-8.5-3.1-12zM8.7 14.9c-1 0-1.9-1-1.9-2.1s.8-2.1 1.9-2.1 1.9 1 1.9 2.1-.8 2.1-1.9 2.1zm6.6 0c-1 0-1.9-1-1.9-2.1s.8-2.1 1.9-2.1 1.9 1 1.9 2.1-.8 2.1-1.9 2.1z"/></svg></a>
-          <a href="#" aria-label="X"><svg viewBox="0 0 24 24"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg></a>
+          <p>NetmarbleX · Supporte: sashapetrov082@gmail.com ·</p>
+          <p>Copyright © Netmarble Corp. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
