@@ -1,22 +1,32 @@
 // Контент сайта. Чтобы подставить свои изображения, положите файлы в папку images/
 // и укажите путь в поле image (например, "images/banner1.jpg").
 // Пока image пустой, вместо картинки показывается цветной градиент.
+//
+// Рекомендуемые размеры:
+//   SLIDES      — 1920×700
+//   MOBILE_GAMES — 600×800 (вертикальный постер)
+//   PC_GAMES     — 480×300
+//   NEWS         — 800×450
 
 const SLIDES = [
   { title: "Хроники Астерии", text: "Новая глава эпической RPG уже доступна", image: "", colors: ["#3a1c71", "#d76d77"] },
   { title: "Империя Ветров", text: "Стройте, захватывайте, побеждайте", image: "", colors: ["#0f2027", "#2c5364"] },
+  { title: "Клинок Рассвета", text: "Динамичный экшен в мире древних руин", image: "", colors: ["#c31432", "#240b36"] },
   { title: "Пиксельная ферма", text: "Летнее обновление: новые культуры и питомцы", image: "", colors: ["#11998e", "#38ef7d"] },
+  { title: "Звёздный флот", text: "Командуйте флотом в бескрайнем космосе", image: "", colors: ["#1a2a6c", "#b21f1f"] },
 ];
 
-const GAMES = [
-  { title: "Хроники Астерии", genre: "rpg", tag: "Новое", image: "", colors: ["#3a1c71", "#d76d77"] },
-  { title: "Империя Ветров", genre: "strategy", tag: "Хит", image: "", colors: ["#0f2027", "#2c5364"] },
-  { title: "Пиксельная ферма", genre: "casual", tag: "", image: "", colors: ["#11998e", "#38ef7d"] },
-  { title: "Клинок Рассвета", genre: "action", tag: "Хит", image: "", colors: ["#c31432", "#240b36"] },
-  { title: "Звёздный флот", genre: "strategy", tag: "", image: "", colors: ["#1a2a6c", "#b21f1f"] },
-  { title: "Сладкий матч", genre: "casual", tag: "Новое", image: "", colors: ["#f857a6", "#ff5858"] },
-  { title: "Легенды Севера", genre: "rpg", tag: "", image: "", colors: ["#4b6cb7", "#182848"] },
-  { title: "Арена Теней", genre: "action", tag: "", image: "", colors: ["#232526", "#414345"] },
+const MOBILE_GAMES = [
+  { title: "Хроники Астерии", genre: "RPG", image: "", colors: ["#3a1c71", "#d76d77"] },
+  { title: "Империя Ветров", genre: "Стратегия", image: "", colors: ["#0f2027", "#2c5364"] },
+  { title: "Сладкий матч", genre: "Казуальная", image: "", colors: ["#f857a6", "#ff5858"] },
+  { title: "Легенды Севера", genre: "RPG", image: "", colors: ["#4b6cb7", "#182848"] },
+];
+
+const PC_GAMES = [
+  { title: "Клинок Рассвета", genre: "Экшен-RPG", image: "", colors: ["#c31432", "#240b36"] },
+  { title: "Звёздный флот", genre: "Стратегия", image: "", colors: ["#1a2a6c", "#b21f1f"] },
+  { title: "Арена Теней", genre: "Экшен", image: "", colors: ["#232526", "#414345"] },
 ];
 
 const NEWS = [

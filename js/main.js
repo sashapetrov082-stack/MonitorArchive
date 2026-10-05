@@ -3,61 +3,63 @@ function bg(item) {
   return item.image ? `url('${item.image}') center/cover no-repeat, ${gradient}` : gradient;
 }
 
-// Слайдер
+// Слайдер с вкладками
 const track = document.getElementById("heroTrack");
-const dots = document.getElementById("heroDots");
+const tabs = document.getElementById("heroTabs");
+const DELAY = 6000;
 let current = 0;
+let timer;
 
 SLIDES.forEach((s, i) => {
   const slide = document.createElement("div");
   slide.className = "hero__slide";
   slide.style.background = bg(s);
-  slide.innerHTML = `<div class="container hero__content"><h1>${s.title}</h1><p>${s.text}</p><a href="#games" class="btn">Играть</a></div>`;
+  slide.innerHTML = `<div class="hero__content"><h1>${s.title}</h1><p>${s.text}</p><a href="#games" class="btn">Играть</a></div>`;
   track.appendChild(slide);
 
-  const dot = document.createElement("button");
-  dot.setAttribute("aria-label", `Слайд ${i + 1}`);
-  dot.addEventListener("click", () => go(i));
-  dots.appendChild(dot);
+  const tab = document.createElement("button");
+  tab.className = "hero__tab";
+  tab.innerHTML = `<span>${s.title}</span><i></i>`;
+  tab.addEventListener("click", () => go(i));
+  tabs.appendChild(tab);
 });
 
 function go(i) {
   current = (i + SLIDES.length) % SLIDES.length;
   track.style.transform = `translateX(-${current * 100}%)`;
-  [...dots.children].forEach((d, j) => d.classList.toggle("is-active", j === current));
+  [...tabs.children].forEach((t, j) => {
+    t.classList.remove("is-active");
+    if (j === current) {
+      void t.offsetWidth; // перезапуск анимации полосы прогресса
+      t.classList.add("is-active");
+    }
+  });
+  clearInterval(timer);
+  timer = setInterval(() => go(current + 1), DELAY);
 }
-
-document.getElementById("heroPrev").addEventListener("click", () => go(current - 1));
-document.getElementById("heroNext").addEventListener("click", () => go(current + 1));
-let timer = setInterval(() => go(current + 1), 6000);
-document.querySelector(".hero").addEventListener("mouseenter", () => clearInterval(timer));
-document.querySelector(".hero").addEventListener("mouseleave", () => (timer = setInterval(() => go(current + 1), 6000)));
 go(0);
 
-// Игры
-const grid = document.getElementById("gamesGrid");
-const genreNames = { rpg: "RPG", strategy: "Стратегия", casual: "Казуальная", action: "Экшен" };
-
-function renderGames(filter) {
-  grid.innerHTML = "";
-  GAMES.filter((g) => filter === "all" || g.genre === filter).forEach((g) => {
-    const card = document.createElement("a");
-    card.href = "#";
-    card.className = "card";
-    card.innerHTML = `
-      <div class="card__img" style="background:${bg(g)}">${g.tag ? `<span class="badge">${g.tag}</span>` : ""}</div>
-      <div class="card__body"><h3>${g.title}</h3><span>${genreNames[g.genre]}</span></div>`;
-    grid.appendChild(card);
-  });
-}
-
-document.getElementById("tabs").addEventListener("click", (e) => {
-  const btn = e.target.closest(".tab");
-  if (!btn) return;
-  document.querySelectorAll(".tab").forEach((t) => t.classList.toggle("is-active", t === btn));
-  renderGames(btn.dataset.filter);
+// Мобильные игры
+const mobileGrid = document.getElementById("mobileGrid");
+MOBILE_GAMES.forEach((g) => {
+  const card = document.createElement("a");
+  card.href = "#";
+  card.className = "poster";
+  card.style.background = bg(g);
+  card.innerHTML = `<div class="poster__info"><h3>${g.title}</h3><span>${g.genre}</span></div>`;
+  mobileGrid.appendChild(card);
 });
-renderGames("all");
+
+// PC-игры
+const pcList = document.getElementById("pcList");
+PC_GAMES.forEach((g) => {
+  const item = document.createElement("a");
+  item.href = "#";
+  item.className = "pc-item";
+  item.innerHTML = `<div class="pc-item__img" style="background:${bg(g)}"></div>
+    <div><h3>${g.title}</h3><span>${g.genre}</span></div>`;
+  pcList.appendChild(item);
+});
 
 // Новости
 const newsList = document.getElementById("newsList");
