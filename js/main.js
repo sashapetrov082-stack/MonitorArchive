@@ -43,7 +43,7 @@ go(0);
 const mobileGrid = document.getElementById("mobileGrid");
 MOBILE_GAMES.forEach((g) => {
   const card = document.createElement("a");
-  card.href = "#";
+  card.href = g.url || "#";
   card.className = "poster";
   card.style.background = bg(g);
   card.innerHTML = `<div class="poster__info"><h3>${g.title}</h3><span>${g.genre}</span></div>`;
@@ -54,7 +54,7 @@ MOBILE_GAMES.forEach((g) => {
 const pcList = document.getElementById("pcList");
 PC_GAMES.forEach((g) => {
   const item = document.createElement("a");
-  item.href = "#";
+  item.href = g.url || "#";
   item.className = "pc-item";
   item.innerHTML = `<div class="pc-item__img" style="background:${bg(g)}"></div>
     <div><h3>${g.title}</h3><span>${g.genre}</span></div>`;
