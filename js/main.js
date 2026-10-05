@@ -14,7 +14,7 @@ SLIDES.forEach((s, i) => {
   const slide = document.createElement("div");
   slide.className = "hero__slide";
   slide.style.background = bg(s);
-  slide.innerHTML = `<div class="hero__content"><h1>${s.title}</h1><p>${s.text}</p><a href="#games" class="btn">Играть</a></div>`;
+  slide.innerHTML = `<div class="hero__content"><h1>${s.title}</h1><p>${s.text}</p><a href="#games" class="btn">플레이하기</a></div>`;
   track.appendChild(slide);
 
   const tab = document.createElement("button");
