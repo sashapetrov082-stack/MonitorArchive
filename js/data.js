@@ -10,10 +10,10 @@
 
 const SLIDES = [
   { title: "몬길: STAR DIVE", text: "", image: "images/mg_top_pc.jpg", colors: ["#3a1c71", "#d76d77"] },
-  { title: "Империя Ветров", text: "Стройте, захватывайте, побеждайте", image: "", colors: ["#0f2027", "#2c5364"] },
-  { title: "Клинок Рассвета", text: "Динамичный экшен в мире древних руин", image: "", colors: ["#c31432", "#240b36"] },
-  { title: "Пиксельная ферма", text: "Летнее обновление: новые культуры и питомцы", image: "", colors: ["#11998e", "#38ef7d"] },
-  { title: "Звёздный флот", text: "Командуйте флотом в бескрайнем космосе", image: "", colors: ["#1a2a6c", "#b21f1f"] },
+  { title: "왕좌의 게임: 킹스로드", text: "", image: "images/gotasia_pc.jpg", colors: ["#0f2027", "#2c5364"] },
+  { title: "일곱 개의 대죄: Origin", text: "", image: "images/origin_top_pc.jpg", colors: ["#c31432", "#240b36"] },
+  { title: "세븐나이츠 리버스", text: "", image: "images/sena_1001.jpg", colors: ["#11998e", "#38ef7d"] },
+  { title: "SOL: enchant", text: "", image: "images/sol_top_pc.jpg", colors: ["#1a2a6c", "#b21f1f"] },
 ];
 
 const MOBILE_GAMES = [
